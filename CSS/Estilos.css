@@ -1,0 +1,439 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: Raleway;
+    background-size: 100%;
+    background-color: gainsboro;
+    
+}
+
+/*ESTILOS DO BANNER DO MENU*/
+.a-img{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(fundo.jpg);
+    background-size: cover;
+
+}
+.a-cont{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*FIM DO BANNER DO MENU*/
+
+
+/*ESTILOS DO MENU*/
+
+.menu ul{
+    list-style: none;
+    
+}
+.menu img{
+    width: 60px;
+    border-radius: 40px 40px 40px 40px;
+}
+.menu input[type="checkbox"]
+{
+    display: none;
+}
+.menu nav{
+    background-color: red;
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    left: -250px;
+    transition: all 0.5s;
+}
+.menu a{
+    background-color: red;
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+.menu a:hover{
+    background-color:maroon;
+    color: black;
+}
+.menu label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.menu ul{
+    top: 90px;
+    position: absolute;
+    width: 100%;
+}
+.menu input[type="checkbox"]:checked ~ nav{
+    transform: translateX(250px);
+}
+/*FIM MENU*/
+
+
+/*Estilo Classes de Carros*/
+.cc ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.cc img{
+    border: 7px solid maroon;
+    border-radius: 0px 25px 0px 25px;
+}
+.cc img:hover{
+    border: 10px solid maroon;
+    border-radius: 0px 25px 0px 25px;
+}
+
+.cc h1{
+    font-family: Raleway;
+    font-size: 100px;
+    text-align: center;
+    color: red;
+}
+.cc *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.a-fundocc{
+    width: 100%;
+    height: 100%;
+    background: gainsboro;
+    background-size: cover;
+}
+.cc p{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+/*Fim Classe Carros*/
+
+/*Pagina Venda Carros*/
+.hat{
+    background-color: gainsboro;
+}
+.area{
+    margin: 10px;
+    border: 5px solid maroon;
+    float: left;
+    width: 30%;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    
+}
+.area:hover {
+    border: 2px solid maroon;
+}
+.area img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+
+}
+#nomecarro {
+    padding: 15px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 35px;
+}
+#preço{
+    padding: 15px;
+    text-align: left;
+    font-family: Raleway;
+    font-size: 35px;
+    color: green;
+}
+#oferta1{
+    padding: 15px;
+    text-align: left;
+    font-family: Raleway;
+    font-size: 35px;
+    color: gold;
+}
+#oferta2{
+    padding: 15px;
+    text-align: left;
+    font-family: Raleway;
+    font-size: 35px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+/*Ofertas*/  
+.heading {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: red;
+}
+  
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+  
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+}
+  
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+  
+.transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+  
+.img-box:hover img { 
+    transform: scale(1.1);
+}
+  
+.img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+  
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+  
+.img-box:hover {
+    cursor: pointer;
+}
+  
+.caption > p:nth-child(2) {
+    font-size: 0.8em;
+}
+  
+.opacity-low {
+    opacity: 0.5;
+    color: red;
+}
+/*Fim Ofertas*/
+
+
+/*Fale Conosco*/
+.formulario{
+    display: inline-block;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    height: 560px;
+
+    top: -10px;
+    left: 500px;
+    padding: 30px;
+    border:5px solid maroon;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+}
+.caixinha{
+    width: 100%;
+    margin: 15px 0;
+}
+.caixinha label,
+.caixinha span{
+    padding-left: 10px;
+    font-size: 1.3em;
+
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+#btn:hover{
+    background-color: red;
+    transition:0.5s ease-out;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+/*Fim Fale Conosco*/
+
+/*Novidades*/
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url(../IMAGENS/Carros-img/novidade1.jpg);
+    background-size: cover;
+    
+}
+.banner-a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: gold;
+}
+.novidade{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 5px solid maroon;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+}
+.novidade h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:red;
+}
+.novidade h2{
+    color: green;
+    text-align: center;
+}
+.novidade p{
+    margin: 50px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.novidade button{
+    width: 200px;
+    height: 100px;
+    border: 5px solid maroon;
+    border-radius: 50px 50px 50px 50px;
+    color: black;
+    font-size: 20px;
+}
+.novidade button:hover{
+    border: 3px solid maroon;
+    background-color: red;
+    border-radius: 50px 50px 50px 50px;
+    color: black;
+    font-size: 25px;
+
+}
+/*Fim Novidades*/
+
+
+/*Mapa*/
+.mapa{
+    margin: 20px;
+}
+.mapa h1{
+    text-align: center;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+.mapa iframe{
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid maroon;
+}
+
+/*Fim Mapa*/
+
+/*Compra Informações*/
+form { 
+    display: inline-block;
+    position: relative;
+
+    left: 400px;
+    top: 100px;
+
+    width: 700px;
+    height:550px;
+    padding: 60px;
+    background-color: white;
+    border-radius: 20px;
+}
+.enviar {
+background-color: #000066;
+width: 100px; 
+height: 40px;
+font-weight: bold;
+border-radius: 5px;
+border: 1px solid;
+color:black;
+}
+form label {
+
+font-weight: bold;
+
+}
+input{
+border-radius: 10px;
+border: 5px solid maroon;
+}
+textarea{
+width: 100%;
+height: 25vh;
+border-radius: 10px;
+border: 2px solid lightseagreen;
+}
+#Form2{
+    width: 90%;
+    height:40vh;
+    padding: 60px;
+    background-color: lawngreen;
+    border-radius: 20px;
+}
+
+/*Fim Comprar Informações*/
